@@ -7,7 +7,7 @@ who am i: basic human (he/him)
 
 [![press meowl!](meowl.webp)](https://github.com/mahmut-py/mahmut-py/issues/new?title=meowlclick&body=press+create+to+register+your+click+.+dont+modify+the+issue+name+otherwise+it+wont+register)
 
-**meowl clicks: 1**
+**meowl clicks: 2**
 
 # 📊 GitHub stats:
 ![](https://github-readme-stats.vercel.app/api?username=mahmut-py&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false)<br/>
