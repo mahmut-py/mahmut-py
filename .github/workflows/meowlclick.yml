@@ -1,0 +1,42 @@
+name: count meowl clicks
+on:
+  issues:
+    types: [opened]
+jobs:
+  update-click-count:
+    if: github.event.issue.title == 'meowlclick'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get current count
+        id: count
+        run: |
+          current=$(grep -oP 'meowl clicks: \K\d+' README.md 2>/dev/null || echo 0)
+          echo "current=$current" >> $GITHUB_OUTPUT
+      - name: Increment count
+        id: increment
+        run: |
+          NEW=$(( ${{ steps.count.outputs.current }} + 1 ))
+          echo "new=$NEW" >> $GITHUB_OUTPUT
+      - name: Replace count in README
+        run: |
+          sed -E -i "s/(meowl clicks: )[0-9]+/\1${{ steps.increment.outputs.new }}/" README.md
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "update meowl click count to ${{ steps.increment.outputs.new }} (incremented by @${{ github.event.issue.user.login }})"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Close issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            })
