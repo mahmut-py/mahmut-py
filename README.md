@@ -5,7 +5,7 @@ who am i: basic human (he/him)
 
 ## press meowl
 
-[![press meowl!](meowl.webp)](https://github.com/mahmut-py/mahmut-py/issues/new?title=hclick&body=press+create+to+register+your+click+.+dont+modify+the+issue+name+otherwise+it+wont+register)
+[![press meowl!](meowl.webp)](https://github.com/mahmut-py/mahmut-py/issues/new?title=meowlclick&body=press+create+to+register+your+click+.+dont+modify+the+issue+name+otherwise+it+wont+register)
 
 **meowl clicks: 0**
 
