@@ -1,9 +1,0 @@
-name: meowl-click
-description: clicking meowl
-title: meowlclick
-labels: ['meowlclick']
-body:
-  - type: markdown
-    attributes:
-      value: |
-        press create to register your click
