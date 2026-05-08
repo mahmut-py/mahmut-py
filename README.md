@@ -10,9 +10,9 @@ who am i: basic human (he/him)
 **meowl clicks: 2**
 
 # 📊 GitHub stats:
-![](https://github-readme-stats.vercel.app/api?username=mahmut-py&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=mahmut-py&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=mahmut-py&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=mahmut-py&show_icons=true&theme=tokyonight)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/streak?username=mahmut-py&theme=tokyonight)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=mahmut-py&layout=compact&theme=tokyonight)
 
 ### ✍️ random dev quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
